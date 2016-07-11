@@ -8,7 +8,7 @@ $phone = (int)$_POST['phone'];
 $age = (int)$_POST['age'];
 $captcha = $_POST['captcha'];
 
-//Lets make a flag so if the value is 1 the form won;t be submitted if 0 everything went ok
+//Lets make a flag so if the value is 1 the form won't be submitted if 0 everything went ok
 $flag=1;
 
 //Allow only letters ans space for name and last name
@@ -62,7 +62,7 @@ else{
 //Form submit or not submit checking
 if($flag==0){
     echo "Form submitted<br>";
-    echo "$flag";
+    echo "flag variable =".$flag";
 }
 else{
     echo "Form wasn't submitted<br>";
