@@ -46,27 +46,27 @@
 <div class="containerForm">
 <form action="form-out.php" method="post">
     <div>Please fill the form</div>
-    Όλα τα πεδία  είναι απαραίτητα <br>
+    All fields are required <br>
     <div>
-    <div class="fixedWidth">Όνομα :</div>
+    <div class="fixedWidth">Name :</div>
        <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="40" name="name" required>*</div>
     </div>
 
     <div>
-    <div class="fixedWidth">Επίθετο :</div>
+    <div class="fixedWidth">Last name :</div>
         <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="40" name="lastName"  required>*</div>
     </div>
     <div>
-    <div class="fixedWidth">Τηλέφωνο :</div>
-        <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="10" name="phone" placeholder="Ακέραιος 5-10 χαρακτήρες" required>*</div>
+    <div class="fixedWidth">Phone :</div>
+        <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="10" name="phone" placeholder=Integer between 5-10 characters" required>*</div>
     </div>
 
     <div>
-    <div class="fixedWidth">Ηλικία:</div>
-        <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="3" name="age"  placeholder="Ηλικία 10-130" required>*</div>
+    <div class="fixedWidth">Age:</div>
+        <div class="insideFormDiv"><input class="inputText" type="text" size="25" maxlength="3" name="age"  placeholder="Age 10-130" required>*</div>
     </div>
     <div class="submitDivs  captcha">Captcha
-    <div>Ποιό είναι το όνομα του πρωταγωνιστή στο Terminator 2 στα Αγγλικά ; </div>
+    <div>What was the name of the lead actor in Terminator 2 ; </div>
         <input class="inputText" type="text" size="25" maxlength="6" name="captcha"  placeholder="ex George" required>
     </div>
 
@@ -74,7 +74,7 @@
     <div class="submitDivs"><input type="submit" value="Submit"></div>
 </form>
 <form action="form-in.php" method="post">
-    <input type="submit" value="Καθαρισμός">
+    <input type="submit" value="Clean">
 </form>
 </div>
 
