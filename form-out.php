@@ -13,37 +13,38 @@ $flag=1;
 
 //Allow only letters ans space for name and last name
 if(!preg_match("/^[a-zA-Z ]*$/",$name)||(!preg_match("/^[a-zA-Z ]*$/",$lastName) )){
-    echo "Στο όνομα και στο επίθετο επιτρέπονται μόνο γράμματα και κενά διαστήματα";
+    echo "In name and last name only letters and spaces are allowed.";
+
 }
 
 
 //Phone check
 if(is_int($phone)&&(!empty($phone))){
-   echo "Δώσατε ακέραιο<br>";
+   echo "You gave integer<br>";
     $flag=0;
 }
 else {
-    echo "Δε δώσατε ακέραιο<br>";
+    echo "You didn't give integer<br>";
     $flag=1;
 }
 
 if((strlen($phone)>=5) && (strlen($phone)<=10)) {
-    echo "Το τηλέφωνο είναι μεταξύ 5-10 χαρακτήρων<br>";
+    echo "Phone is between 5-10 characters<br>";
     $flag=0;
 }
 else{
-   echo 'Το τηλέφωνο δεν είναι μεταξύ 5-10 χαρακτήρων<br>';
+   echo 'Phone isn't between 5-10 characters<br>';
     $flag=1;
 }
 //End phone check
 
 //Age check
 if((is_int($age))&&($age>=10&&$age<=130)){
-    echo 'Η ηλικία που δώσατε είναι σωστή από 10-130<br>';
+    echo 'The age is correct between 10-130<br>';
     $flag=0;
 }
 else{
-    echo 'Η ηλικία που δώσατε δεν είναι σωστή από 10-130<br>';
+    echo 'The age is not correct between 10-130<br>';
     $flag=1;
 }
 //End age check
