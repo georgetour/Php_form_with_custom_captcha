@@ -1,4 +1,4 @@
-# Php_form_with_custom_captcha
+# Php form with custom captcha
 A php form that makes some checks and custom captcha question .
 - The form accepts the name and last name as letters only and spaces.
 - The phone must be integer between 5-10 numbers.
